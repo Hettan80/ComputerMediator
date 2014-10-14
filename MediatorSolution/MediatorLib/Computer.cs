@@ -8,5 +8,6 @@ namespace MediatorLib
 {
    class Computer
    {
+
    }
 }

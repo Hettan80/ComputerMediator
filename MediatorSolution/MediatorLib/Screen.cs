@@ -8,5 +8,11 @@ namespace MediatorLib
 {
    class Screen
    {
+      private ComputerSystem mediator;
+      public Screen(ComputerSystem mediator)
+      {
+         this.mediator = mediator;
+         this.mediator.RegisterScreen(this);
+      }
    }
 }
