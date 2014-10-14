@@ -8,9 +8,10 @@ namespace MediatorLib
 {
     public class ComputerSystem
     {
+       private Screen screen;
        internal void RegisterScreen(Screen screen)
        {
-          throw new NotImplementedException();
+          this.screen = screen;
        }
     }
 }
