@@ -31,5 +31,10 @@ namespace MediatorLib
        {
            this.computer = computer;
        }
+        
+        internal void Switch(Computer computer)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

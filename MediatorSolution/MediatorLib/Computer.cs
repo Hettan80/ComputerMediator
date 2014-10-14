@@ -9,7 +9,8 @@ namespace MediatorLib
   public class Computer
    {
        private ComputerSystem mediator;
-
+       private bool ComputerOff;
+     
        public Computer(ComputerSystem mediator)
        {
            this.mediator = mediator;
@@ -18,12 +19,16 @@ namespace MediatorLib
 
        public void SwitchOn()
        {
-       Console.WriteLine("");
+           ComputerOff = true;
+           Console.WriteLine("Computer switched on");
+           mediator.Switch(this);
        }
 
        public void SwitchOff()
        {
-       
+           ComputerOff = true;
+           Console.WriteLine("Computer Off");
+           mediator.Switch(this);
        }
    }
 }
