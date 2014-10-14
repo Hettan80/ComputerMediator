@@ -9,6 +9,7 @@ namespace MediatorLib
     public class Keyboard
     {
         private ComputerSystem mediator;
+        public char Key { get; set; }
 
         public Keyboard(ComputerSystem mediator)
         {
@@ -16,12 +17,11 @@ namespace MediatorLib
             mediator.RegisterKeyboard(this);
         }
 
-
-        public void KeyPressed()
+        public void KeyPressed(char c)
         {
-            Console.WriteLine("Key Pressed");
+            Key = c;
+            Console.WriteLine("Key "+Key+" Pressed");
             mediator.KeyPressed(this);
-                ;
         }
     }
 }

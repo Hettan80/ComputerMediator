@@ -23,7 +23,7 @@ namespace MediatorLib
 
        internal void KeyPressed(Keyboard keyboard)
        {
-           Console.WriteLine("ComputerSystem: A Key was pressed");
+           Console.WriteLine("ComputerSystem: Key " + keyboard.Key + " was pressed");
        }
     }
 }

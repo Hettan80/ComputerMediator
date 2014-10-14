@@ -11,13 +11,14 @@ namespace MediatorTests
       public void NeedToNameThisTestLater()
       {
           ComputerSystem testSystem = new ComputerSystem();
-          Computer testComputer = new Computer();
-          Keyboard testKeyboard = new Keyboard();
-          Screen testScreen = new Screen();
+          Computer testComputer = new Computer(testSystem);
+          Keyboard testKeyboard = new Keyboard(testSystem);
+          Screen testScreen = new Screen(testSystem);
           string expectedScreenOutput = "";
           testComputer.SwitchOn();
-          testKeyboard.KeyPressed();
-          Assert.AreEqual(expectedScreenOutput,testScreen.DisplayCharacter());
+          testKeyboard.KeyPressed('A');
+          Assert.AreEqual(expectedScreenOutput, testScreen.DisplayCharacter());
+          Assert.AreEqual('A',testKeyboard.Key);
       }
    }
 }
