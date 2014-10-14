@@ -20,7 +20,7 @@ namespace MediatorLib
        public void SwitchOn()
        {
            ComputerOff = true;
-           Console.WriteLine("Computer switched on");
+           Console.WriteLine("Computer: Computer switched on");
            mediator.ComputerSwitchedOn(this);
        }
 

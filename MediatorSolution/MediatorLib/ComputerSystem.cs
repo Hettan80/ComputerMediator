@@ -24,7 +24,7 @@ namespace MediatorLib
 
         internal void KeyPressed(Keyboard keyboard)
         {
-            Console.WriteLine("ComputerSystem: Key " + keyboard.Key + " was pressed");
+            Console.WriteLine("Mediator: Key " + keyboard.Key + " was pressed");
         }
 
         internal void RegisterComputer(Computer computer)
@@ -34,13 +34,18 @@ namespace MediatorLib
 
         internal void ComputerSwitchedOn(Computer computer)
         {
-            Console.WriteLine("Computer Is On");
+            Console.WriteLine("Mediator: Computer Is On");
         
         }
 
         internal void ComputerSwitchedOff(Computer computer)
         {
-            Console.WriteLine("Computer Is oss");
+            Console.WriteLine("Mediator: Computer Is off");
+        }
+
+        internal void CharacterDisplayed(Screen screen)
+        {
+           Console.WriteLine("Mediator: Character is displayed");
         }
     }
 }
