@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MediatorLib
 {
-   class Computer
+  public class Computer
    {
        private ComputerSystem mediator;
 
@@ -18,7 +18,7 @@ namespace MediatorLib
 
        public void SwitchOn()
        {
-       
+       Console.WriteLine("");
        }
 
        public void SwitchOff()
