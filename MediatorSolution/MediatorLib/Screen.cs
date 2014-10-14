@@ -19,7 +19,7 @@ namespace MediatorLib
       public void DisplayCharacter(char c)
       {
          char Key = c;
-         Console.WriteLine("Character " + Key + " Displayed");
+         Console.WriteLine("Screen: Character " + Key + " Displayed");
          mediator.CharacterDisplayed(this);
       }
    }

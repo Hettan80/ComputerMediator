@@ -20,7 +20,7 @@ namespace MediatorLib
         public void KeyPressed(char c)
         {
             Key = c;
-            Console.WriteLine("Key "+Key+" Pressed");
+            Console.WriteLine("Keyboard: Key "+Key+" Pressed");
             mediator.KeyPressed(this);
         }
     }

@@ -5,20 +5,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MediatorTests
 {
    [TestClass]
-   public class UnitTest1
+   public class MediatorTest
    {
       [TestMethod]
-      public void NeedToNameThisTestLater()
+      public void Test_To_See_That_Output_From_Mediator_Is_Correct()
       {
           ComputerSystem testSystem = new ComputerSystem();
           Computer testComputer = new Computer(testSystem);
           Keyboard testKeyboard = new Keyboard(testSystem);
           Screen testScreen = new Screen(testSystem);
-          string expectedScreenOutput = "";
+         
           testComputer.SwitchOn();
-          testKeyboard.KeyPressed('A');
-          Assert.AreEqual(expectedScreenOutput, testScreen.DisplayCharacter());
-          Assert.AreEqual('A',testKeyboard.Key);
+          testKeyboard.KeyPressed('b');
+         testScreen.DisplayCharacter('a');
       }
    }
 }
