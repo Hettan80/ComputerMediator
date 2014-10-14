@@ -25,6 +25,7 @@ namespace MediatorLib
         internal void KeyPressed(Keyboard keyboard)
         {
             Console.WriteLine("Mediator: Key " + keyboard.Key + " was pressed");
+            screen.DisplayCharacter(keyboard.Key);
         }
 
         internal void RegisterComputer(Computer computer)
