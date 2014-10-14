@@ -14,21 +14,21 @@ namespace MediatorLib
        public Computer(ComputerSystem mediator)
        {
            this.mediator = mediator;
-           this.mediator.RegisterComputer();
+           this.mediator.RegisterComputer(this);
        }
 
        public void SwitchOn()
        {
            ComputerOff = true;
            Console.WriteLine("Computer switched on");
-           mediator.Switch(this);
+           mediator.ComputerSwitchedOn(this);
        }
 
        public void SwitchOff()
        {
            ComputerOff = true;
            Console.WriteLine("Computer Off");
-           mediator.Switch(this);
+           mediator.ComputerSwitchedOff(this);
        }
    }
 }
