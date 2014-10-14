@@ -7,8 +7,16 @@ namespace MediatorTests
    public class UnitTest1
    {
       [TestMethod]
-      public void TestMethod1()
+      public void NeedToNameThisTestLater()
       {
+          ComputerSystem testSystem = new ComputerSystem();
+          Computer testComputer = new Computer();
+          Keyboard testKeyboard = new Keyboard();
+          Screen testScreen = new Screen();
+          string expectedScreenOutput = "";
+          testComputer.SwitchOn();
+          testKeyboard.KeyPressed();
+          Assert.AreEqual(expectedScreenOutput,testScreen.DisplayCharacter());
       }
    }
 }
