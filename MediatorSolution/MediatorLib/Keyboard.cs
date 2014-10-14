@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MediatorLib
 {
-    public class Class1
-    {
-    }
+   class Keyboard
+   {
+   }
 }
