@@ -1,4 +1,5 @@
 ﻿using System;
+using MediatorLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MediatorTests
