@@ -42,5 +42,10 @@ namespace MediatorLib
         {
             Console.WriteLine("Computer Is oss");
         }
+
+        internal void CharacterDisplayed(Screen screen)
+        {
+           Console.WriteLine("Character is displayed");
+        }
     }
 }
