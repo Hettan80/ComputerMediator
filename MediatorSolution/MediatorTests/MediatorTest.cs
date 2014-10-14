@@ -16,7 +16,7 @@ namespace MediatorTests
          Screen testScreen = new Screen(testSystem);
          
          testComputer.SwitchOn();
-         testKeyboard.KeyPressed('b');
+         testKeyboard.KeyPressed("b");
          testComputer.SwitchOff();
       }
    }

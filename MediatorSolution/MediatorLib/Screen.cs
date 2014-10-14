@@ -16,10 +16,9 @@ namespace MediatorLib
          this.mediator.RegisterScreen(this);
       }
 
-      public void DisplayCharacter(char c)
+      public void DisplayCharacter(string c)
       {
-         char Key = c;
-         Console.WriteLine("Screen: Character " + Key + " Displayed");
+         Console.WriteLine("Screen: Character " + c + " Displayed");
          mediator.CharacterDisplayed(this);
       }
    }

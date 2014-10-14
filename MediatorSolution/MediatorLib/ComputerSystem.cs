@@ -22,10 +22,10 @@ namespace MediatorLib
             this.keyboard = keyboard;
         }
 
-        internal void KeyPressed(Keyboard keyboard)
+        internal void KeyPressed(string key)
         {
-            Console.WriteLine("Mediator: Key " + keyboard.Key + " was pressed");
-            screen.DisplayCharacter(keyboard.Key);
+            Console.WriteLine("Mediator: Key " + key + " was pressed");
+            screen.DisplayCharacter(key);
         }
 
         internal void RegisterComputer(Computer computer)
