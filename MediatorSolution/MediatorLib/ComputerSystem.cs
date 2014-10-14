@@ -10,6 +10,7 @@ namespace MediatorLib
     {
        private Screen screen;
        private Keyboard keyboard;
+        private Computer computer;
 
        internal void RegisterScreen(Screen screen)
        {
@@ -24,6 +25,11 @@ namespace MediatorLib
        internal void KeyPressed(Keyboard keyboard)
        {
            Console.WriteLine("ComputerSystem: Key " + keyboard.Key + " was pressed");
+       }
+
+       internal void RegisterComputer()
+       {
+           this.computer = computer;
        }
     }
 }

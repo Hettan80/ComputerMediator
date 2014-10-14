@@ -8,6 +8,22 @@ namespace MediatorLib
 {
    class Computer
    {
+       private ComputerSystem mediator;
 
+       public Computer(ComputerSystem mediator)
+       {
+           this.mediator = mediator;
+           this.mediator.RegisterComputer();
+       }
+
+       public void SwitchOn()
+       {
+       
+       }
+
+       public void SwitchOff()
+       {
+       
+       }
    }
 }
